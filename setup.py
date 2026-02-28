@@ -4,7 +4,7 @@ setup(
     name="ethos-ai",
     version="0.1.0",
     author="Naitiki-Medha",
-    description="A simple Python web framework",
+    description="Open Source Framework for Regulatory Compliance(Indian AI laws), Data Privacy and Integrity, Misinformation and deepfakes",
     packages=find_packages(),
     install_requires=[],
     classifiers=[
