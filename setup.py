@@ -1,9 +1,9 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="minipy-framework",
+    name="ethos-ai",
     version="0.1.0",
-    author="Your Name",
+    author="Naitiki-Medha",
     description="A simple Python web framework",
     packages=find_packages(),
     install_requires=[],
@@ -11,5 +11,5 @@ setup(
         "Programming Language :: Python :: 3",
         "Operating System :: OS Independent",
     ],
-    python_requires=">=3.6",
+    python_requires=">=3.8",
 )
