@@ -1,0 +1,10 @@
+pydantic>=2.0.0
+fastapi>=0.100.0
+python-dotenv>=1.0.0
+
+[image]
+invisible-watermark
+opencv-python
+
+[pii]
+microsoft-presidio-analyzer
