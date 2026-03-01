@@ -1,0 +1,28 @@
+Metadata-Version: 2.4
+Name: pif2
+Version: 0.1.0
+Summary: A compliance framework for AI generation under Indian Laws (IT Act, DPDP, MeitY)
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: pydantic>=2.0.0
+Requires-Dist: fastapi>=0.100.0
+Requires-Dist: python-dotenv>=1.0.0
+Provides-Extra: pii
+Requires-Dist: microsoft-presidio-analyzer; extra == "pii"
+Provides-Extra: image
+Requires-Dist: invisible-watermark; extra == "image"
+Requires-Dist: opencv-python; extra == "image"
+
+# PIF2 - Python Indian Framework for AI Compliance
+
+A compliance framework for AI content generation under Indian Laws (IT Act, DPDP, MeitY).
+
+## Installation
+
+```bash
+pip install -e .
+```
+
+## Usage
+
+See `example_usage.py` for a complete example.

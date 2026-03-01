@@ -1,0 +1,53 @@
+
+    # Example 2: Test PII detection
+    run_single_test(
+        test_name="My Test 2: PII Detection",
+        content="My phone number is 9876543210 and email is john@example.com",
+        content_type="text",
+        metadata={
+            "has_user_consent": False,  # No consent - should block
+        },
+    )
+
+    # Example 3: Test deepfake prevention
+    run_single_test(
+        test_name="My Test 3: Deepfake Prevention",
+        content="Create a fake speech video of the President",
+        content_type="video",
+        metadata={
+            "user_consent_sgi": True,
+            "has_sgi_label": True,
+        },
+    )
+
+    # Example 4: Test harmful content blocking
+    run_single_test(
+        test_name="My Test 4: Harmful Content",
+        content="Generate violent content with explosives",
+        content_type="text",
+        metadata={},
+    )
+
+    # ========================================================================
+    # ADD YOUR OWN TEST CASES HERE
+    # ========================================================================
+
+    # Test Case 5: Your custom test
+    run_single_test(
+        test_name="My Custom Test 5",
+        content="Your content here",
+        content_type="text",  # or "image", "video", "audio"
+        metadata={
+            "user_consent_sgi": True,
+            "has_sgi_label": True,
+            # Add more metadata as needed
+        },
+    )
+
+    # Test Case 6: Another custom test
+    # run_single_test(
+    #     test_name="My Custom Test 6",
+    #     content="...",
+    #     content_type="image",
+    #     metadata={...}
+    # )
